@@ -1,0 +1,22 @@
+﻿//- page laytout name
+extends _layout.pug
+
+block pageInfo
+    - var pageTitle = "index"
+    - var pageDesc = "pageDesc"
+    - var pageJs = "index.js"
+    - var moreJs = ["tranbg.js"]
+//- page html
+block page_main
+    section.index
+        main#tranarea
+        .deco1
+            img(src="images/sakuratree-1.png")
+        .deco2
+            img(src="images/sakuratree-1.png")
+        h1 櫻吹雪
+        #iframe(scrolling="yes")
+            iframe#iframe_src(src="https://txp.rs/viewvoucher.aspx?voucherguid=6bb8e0ca-9ec3-4f0a-8d23-1595e347e050")
+        //- button(@click="changShow") 櫻吹雪切換
+
+    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js")

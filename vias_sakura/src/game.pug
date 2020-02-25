@@ -1,0 +1,73 @@
+﻿//- page laytout name
+extends _layout.pug
+
+block pageInfo
+    - var pageTitle = "game"
+    - var pageDesc = "pageDesc"
+    - var pageJs = "game.js"
+    - var moreJs = ["tranbg.js"]
+//- page html
+block page_main
+    section.game
+        //- canvas#canvas
+        .step.step1
+            .scenes.scenes1
+                .word1
+                    p 每年三月底－四月初是日本櫻花盛開的季節和所愛的人坐在櫻花樹下賞櫻象徵著一年美好的開始
+                .word2
+                    p 今年，無論是否飛到日本賞櫻都能在Visa擁有一幅專屬的櫻花紀念...
+            .scenes.scenes2
+                h2 賞櫻當然要揪人一起去呀～今年該約誰一起去好呢...？
+                ul
+                    li 揪家人去
+                    li 揪麻吉去
+                    li 揪閨蜜去
+                    li 揪阿娜答去
+        .step.step2
+            .scenes.scenes1
+                .word1
+                    p 每年三月底－四月初是日本櫻花盛開的季節和所愛的人坐在櫻花樹下賞櫻象徵著一年美好的開始
+                .word2
+                    p 今年，無論是否飛到日本賞櫻都能在Visa擁有一幅專屬的櫻花紀念...
+            .scenes.scenes2
+                h2 幸好我手機用Visa儲值Suica一支手機直直通到底不用排隊買票!
+            .scenes.scenes3
+                h2 嗯....? 同事/閨蜜/阿娜答發訊息來...!?
+                .word1 word1
+                .word2 word2
+        .step.step3
+            .scenes.scenes1
+                h2 賞櫻就該買限定美食才對味吧!該買哪種食物好呢?
+                ul
+                    li sel1
+                    li sel2
+                    li sel3
+            .scenes.scenes2
+                h2 等等等等等等等等
+            .scenes.scenes3
+                .word1 如果刷卡結帳就很省時間後面也不怕排隊啦
+                .word2 wododoodododo2
+        .step.step4
+            .scenes.scenes1
+                h2 咦? 這裡有台販賣機欸!咦? 這裡有台販賣機欸!
+                ul
+                    li sel1
+                    li sel2
+                    li sel3
+            .scenes.scenes2
+                h2 呃.... 要投幣才發現...
+            .scenes.scenes3
+                h2 等等.....日本販賣機竟然也可以刷卡耶~這樣就不怕零錢不夠啦!
+        .step.step5
+            .scenes.scenes1
+                h2 哇! 是傳說中的櫻吹雪!
+            .scenes.scenes2
+                h2 Hi ~ 幸福的________(fb名字)
+                canvas#canvas
+        transition(name="fade")
+            .transpage(v-show="transPage")
+                main#tranarea
+                .deco1
+                    img(src="images/sakuratree-1.png")
+                .deco2
+                    img(src="images/sakuratree-1.png")

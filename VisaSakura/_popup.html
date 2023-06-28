@@ -6,7 +6,7 @@
                 <div class="close" @click="popClose"><img src="images/menu-close.png" /></div>
                 <h2><img src="images/check-title.png" /></h2>
                 <div class="content">
-                    <p>恭喜你踏出邀好友賞櫻的第一步啦!<br />每成功邀請<span class="red">2名</span>好友入席，<br />即可獲得<span class="red">1次</span>抽獎機會!<br /><br />邀請愈多好友入席賞櫻，<br /><span class="red">抽獎機會愈多!</span><br /><br />記得回到網站查看邀請進度~<br />祝你抽中最高超商百元購物金!</p>
+                    <p>恭喜你踏出邀好友賞櫻的第一步啦!<br/>每成功邀請<span class="red">2名</span>好友入席，<br/>即可獲得<span class="red">1次</span>抽獎機會!<br/><br/>邀請愈多好友入席賞櫻，<br/><span class="red">抽獎機會愈多!</span><br/><br/>記得回到網站查看邀請進度~<br/>祝你抽中最高超商百元購物金!</p>
                 </div>
                 <div class="btn_check" @click="getRecord" gtm-data="分享結束_查看邀請進度"><img src="images/btn-check.png" gtm-data="分享結束_查看邀請進度" /></div>
             </div>
@@ -14,7 +14,7 @@
                 <div class="close" @click="popClose"><img src="images/menu-close.png" /></div>
                 <h2><img src="images/check-title.png" /></h2>
                 <div class="content">
-                    <p>賞櫻當然要揪團一起來!<br />成功邀請<span class="red">2名</span>好友賞櫻，<br />即可線上抽<span class="red">超商購物金!</span><br /><br />邀請愈多好友入席，<br />抽獎機會愈多！<br /><br />你的邀請網址：<br /></p>
+                    <p>賞櫻當然要揪團一起來!<br/>成功邀請<span class="red">2名</span>好友賞櫻，<br/>即可線上抽<span class="red">超商購物金!</span><br/><br/>邀請愈多好友入席，<br/>抽獎機會愈多！<br/><br/>你的邀請網址：<br/></p>
                     <input class="link" type="text" readonly="readonly" v-model="fbLink" />
                 </div>
                 <div class="btnarea">
@@ -26,7 +26,7 @@
                 <div class="close" @click="popClose"><img src="images/menu-close.png" /></div>
                 <h2><img src="images/check-title.png" /></h2>
                 <div class="content" v-if="awarditem">
-                    <p>Hi <span class="name">{{fbData.fbName}}</span><br />恭喜你紀錄你的櫻花盛宴~<br />與重要的人一同賞櫻是件幸福的事!<br />你成功獲得:</p>
+                    <p>Hi <span class="name">{{fbData.fbName}}</span><br/>恭喜你紀錄你的櫻花盛宴~<br/>與重要的人一同賞櫻是件幸福的事!<br/>你成功獲得:</p>
                     <div class="ticketbox">
                         <div id="iframe" scrolling="yes">
                             <iframe id="iframe_src" :src="awardUrl"></iframe>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="content" v-if="!awarditem">
-                    <p>Hi {{fbData.fbName}}<br />可惜還沒搖到專屬櫻花好禮…<br />繼續邀請好友入席賞櫻吧!</p>
+                    <p>Hi {{fbData.fbName}}<br/>可惜還沒搖到專屬櫻花好禮…<br/>繼續邀請好友入席賞櫻吧!</p>
                     <div class="btn_inv" @click="invfriend" gtm-data="賞櫻好禮_沒成功_邀請好友"><img src="images/btn-invbig.png" gtm-data="賞櫻好禮_沒成功_邀請好友" /></div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                 <div class="close" @click="popClose"><img src="images/menu-close.png" /></div>
                 <h2><img src="images/check-title.png" /></h2>
                 <div class="content">
-                    <p>你尚未預定專屬線上賞櫻席，<br />記得線上賞櫻後，<br />邀請好友入席訂製你們專屬浮世繪，<br />即有機會可獲得<br />超商櫻花季購物金等好禮…!</p>
+                    <p>你尚未預定專屬線上賞櫻席，<br/>記得線上賞櫻後，<br/>邀請好友入席訂製你們專屬浮世繪，<br/>即有機會可獲得<br/>超商櫻花季購物金等好禮…!</p>
                 </div>
                 <div class="btn_toplay" @click="userLogin" gtm-data="主選單_未入席_邀請入席"><img src="images/action_btn.png" gtm-data="主選單_未入席_邀請入席" /></div>
             </div>
@@ -50,7 +50,7 @@
                 <div class="close" @click="popClose"><img src="images/menu-close.png" /></div>
                 <h2><img src="images/check-title.png" /></h2>
                 <div class="content">
-                    <p><span class="red name">{{invName}}</span>邀請你一起<br />加入Visa線上賞櫻團<br /><br />一期一會的櫻花季<br />讓你們擁有一幅最美的賞櫻紀念...</p>
+                    <p><span class="red name">{{invName}}</span>邀請你一起<br/>加入Visa線上賞櫻團<br/><br/>一期一會的櫻花季<br/>讓你們擁有一幅最美的賞櫻紀念...</p>
                 </div>
                 <div class="btn_toplay" @click="fbLogin" gtm-data="被邀請者_入席賞櫻"><img src="images/action_btn.png" gtm-data="被邀請者_入席賞櫻" /></div>
             </div>
@@ -58,8 +58,8 @@
                 <div class="close" @click="popClose"><img src="images/menu-close.png" /></div>
                 <h2><img src="images/check-title.png" /></h2>
                 <div class="content">
-                    <p>目前已有<span class="red">{{userlottery.invited}} 名好友</span>與你一同賞櫻囉!<br />你總共獲得<span class="red">{{userlottery.total}} 次</span>抽獎機會!</p>
-                    <p v-if="!lotcun">加把勁邀請好友入席賞櫻~<br />最高抽超商<span class="red">百元購物金</span>!!</p>
+                    <p>目前已有<span class="red">{{userlottery.invited}} 名好友</span>與你一同賞櫻囉!<br/>你總共獲得<span class="red">{{userlottery.total}} 次</span>抽獎機會!</p>
+                    <p v-if="!lotcun">加把勁邀請好友入席賞櫻~<br/>最高抽超商<span class="red">百元購物金</span>!!</p>
                 </div>
                 <div class="frequency">
                     <p>已用 {{userlottery.used}} 次抽獎機會</p>
@@ -84,7 +84,7 @@
                 <h2><img src="images/check-title.png" /></h2>
                 <div class="block" v-if="winaward">
                     <div class="content">
-                        <p>恭喜你! 春神來了好運到!<br />今天的你，沒有極限!<br />幸運獲得<span class="red">{{getAward}}</span>!</p>
+                        <p>恭喜你! 春神來了好運到!<br/>今天的你，沒有極限!<br/>幸運獲得<span class="red">{{getAward}}</span>!</p>
                         <div class="img"><img src="images/pic-win.png" /></div>
                     </div>
                     <div class="btnarea">
